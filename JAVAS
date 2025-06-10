@@ -1,0 +1,6 @@
+function escolherPrato(button) {
+    // Remove o prato escolhido
+    button.style.display = 'none';
+    
+    // Você pode adicionar outras ações aqui, como enviar a escolha para um servidor
+}
