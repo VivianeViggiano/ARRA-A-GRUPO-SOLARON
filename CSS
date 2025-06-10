@@ -2,9 +2,21 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 20px;
+    background-color: #f9f9f9;
 }
-#pratos {
-    margin-top: 20px;
+header {
+    margin-bottom: 20px;
+}
+h1 {
+    color: #FF4500; /* Cor laranja para o título */
+}
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+input[type="text"], input[type="radio"] {
+    margin-bottom: 15px;
 }
 button.prato {
     margin: 5px;
@@ -17,4 +29,16 @@ button.prato {
 }
 button.prato:hover {
     background-color: #45a049;
+}
+button[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button[type="submit"]:hover {
+    background-color: #007B9E;
 }
