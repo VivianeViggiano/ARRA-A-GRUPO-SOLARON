@@ -1,6 +1,14 @@
 function escolherPrato(button) {
     // Remove o prato escolhido
     button.style.display = 'none';
-    
-    // Você pode adicionar outras ações aqui, como enviar a escolha para um servidor
+}
+
+function enviarFormulario(event) {
+    event.preventDefault(); // Impede o envio padrão do formulário
+    // Aqui você pode adicionar a lógica para coletar os dados do formulário e enviá-los
+    alert("Formulário enviado!"); // Mensagem de confirmação
+    // Considere limpar o formulário ou redirecionar após envio
+    document.getElementById('formulario').reset();
+    const pratoButtons = document.querySelectorAll('.prato');
+    pratoButtons.forEach(button => button.style.display = 'inline-block'); // redimensionar todos os botões
 }
